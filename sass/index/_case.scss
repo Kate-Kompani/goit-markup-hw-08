@@ -1,0 +1,60 @@
+.case {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.case__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor('title-color');
+
+    margin-bottom: 50px;
+}
+
+.case__cards {
+    --set-gap: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: calc(-1 * var(--set-gap));
+    margin-top: calc(-1 * var(--set-gap));
+}
+
+.case__item {
+    flex-basis: calc(100%/ 3 - var(--set-gap));
+    margin-left: var(--set-gap);
+    margin-top: var(--set-gap);
+}
+
+.case__thumb {
+    position: relative;
+    height: 294px;
+}
+
+.case__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.case__inscription {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 27px 0;
+}

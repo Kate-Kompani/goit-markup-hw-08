@@ -1,0 +1,18 @@
+$colors:(
+    'title-color': #212121,
+    'primary': #757575,
+    'accent': #2196F3,
+    'secondary': rgba(255, 255, 255, 0.6),
+    'background-dark': #2F303A,
+    'background-light': #F5F4FA,
+    'background-hero': #C4C4C4,
+    'icons-light': #AFB1B8,
+    'icons-dark': rgba(255, 255, 255, 0.1)
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 250ms;
