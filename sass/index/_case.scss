@@ -15,24 +15,20 @@
 }
 
 .case__cards {
-    --set-gap: 30px;
-
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: calc(-1 * var(--set-gap));
-    margin-top: calc(-1 * var(--set-gap));
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 .case__item {
-    flex-basis: calc(100%/ 3 - var(--set-gap));
-    margin-left: var(--set-gap);
-    margin-top: var(--set-gap);
+    flex-basis: 370px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .case__thumb {
     position: relative;
-    height: 294px;
 }
 
 .case__img {

@@ -14,7 +14,7 @@
     margin-bottom: 50px;
 }
 
-.clients-list{
+.clients__list{
     --set-gap: 30px;
 
     display: flex;
@@ -24,13 +24,13 @@
     margin-top: calc(-1 * var(--set-gap));   
 }
 
-.clients-list__item {
+.clients__item {
     flex-basis: calc(100%/6 - var(--set-gap));
     margin-left: var(--set-gap);
     margin-top: 30px;    
 }
 
-.clients-list__link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
     } 
 }
 
-.clients-list__logo {
+.clients__logo {
     fill: getColor('icons-light');
     transition: fill $duration $cubic-bezier, border $duration $cubic-bezier;
 }
