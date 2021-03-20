@@ -23,9 +23,20 @@ h1, h2, h3, h4, ul, p {
 }
 
 .container{
-    max-width: 1200px;
     margin: 0px auto;
     padding: 0px 15px;
+
+     @media (min-width:$mobile){
+        width: 480px;
+    }
+    
+    @media (min-width:$tablet){
+        width: 768px;
+    }
+
+    @media (min-width:$desktop){
+        width: 1200px;
+    }
 }
 
 .visually-hidden {

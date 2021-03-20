@@ -1,46 +1,57 @@
 .hero {
-    background-image: linear-gradient(to right,
-     rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)),
-     url(../images/main/hero.jpg);
-    background-color: getColor(background-hero);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;    
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main/hero.jpg);
+  background-color: getColor(background-hero);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero__container{
-    margin: 0px auto;
-    text-align: center;
-    padding: 200px 0;  
+.hero__container {
+  margin: 0px auto;
+  text-align: center;
+  padding: 118px 0;
+
+  @media (min-width:desktop) {
+      padding: 200px 0;
+  }
 }
 
 .hero__title {
-    text-decoration: none;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    max-width: 696px;
+    max-width: 360px;
     margin: 0px auto 30px;
+
+    @media (min-width:$desktop) {
+        font-size: 44px;
+        line-height: 60px;
+        max-width: 696px;
+    }
 }
 
 .hero__button {
-    color: #FFFFFF;
-    background-color: getColor('accent');
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: getColor("accent");
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-    border: 0px;
-    border-radius: 4px;
-    padding: 10px 32px;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
