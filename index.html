@@ -39,10 +39,12 @@
                     </a>
                 </li>
            </ul>
-           <svg class="header__menu-button" width="40" height="40">
-                <use href="./images/icons/symbol-defs.svg#menu">
-                </use>
-           </svg>           
+           <button class="header__menu-button">
+                <svg width="40" height="40">
+                    <use href="./images/icons/symbol-defs.svg#menu">
+                    </use>
+                </svg>
+           </button>                     
         </div> 
     </header>
 
@@ -367,50 +369,52 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <div>
-                <a class="footer__logo" href="./index.html">Web<span class="footer__studio">Studio</span></a>
-                <address>
-                    <a class="footer__address" href="#">г. Киев, пр-т Леси Украинки, 26</a>
-                    <a class="footer__mail" href="mailto:info@example.com">info@devstudio.com</a>
-                    <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                </address>
-            </div>
-            <div class="invitation">
-                <p class="invitation__title">Присоединяйтесь</p>
-                <ul class="invitation__socials">
-                    <li class="invitation__item">
-                        <a class="invitation__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="invitation__item">
-                        <a class="invitation__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="invitation__item">
-                        <a class="invitation__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="invitation__item">
-                        <a class="invitation__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__contact-tablet">
+                <div class="footer__contact-info">
+                    <a class="footer__logo" href="./index.html">Web<span class="footer__studio">Studio</span></a>
+                    <address class="footer__contacts">
+                        <a class="footer__address" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a class="footer__mail" href="mailto:info@example.com">info@devstudio.com</a>
+                        <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </address>
+                </div>
+                <div class="invitation">
+                    <p class="invitation__title">Присоединяйтесь</p>
+                    <ul class="invitation__socials">
+                        <li class="invitation__item">
+                            <a class="invitation__link" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons/symbol-defs.svg#instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="invitation__item">
+                            <a class="invitation__link" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons/symbol-defs.svg#twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="invitation__item">
+                            <a class="invitation__link" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons/symbol-defs.svg#facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="invitation__item">
+                            <a class="invitation__link" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons/symbol-defs.svg#linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form class="subscription">
                 <p class="subscription__title">Подпишитесь на рассылку</p>
