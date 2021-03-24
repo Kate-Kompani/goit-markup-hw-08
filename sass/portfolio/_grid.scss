@@ -14,6 +14,11 @@
     align-items: center;
     border-radius: 4px;
     margin-bottom: 40px;
+
+    @media (max-width:767px) {
+    margin-top: -15px;
+    margin-left: -8px;
+    }
     
     @media (min-width:$tablet) {
         justify-content: center;
@@ -26,12 +31,8 @@
 }
 
 .filter__item {
-    margin-right: 8px;
-    margin-bottom: 15px;
-
-    &:last-child {
-       margin-right: 0; 
-    }
+    margin-left: 8px;
+    margin-top: 15px;
 }
 
 .filter__button {

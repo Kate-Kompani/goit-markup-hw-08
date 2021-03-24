@@ -583,20 +583,6 @@ h1, h2, h3, h4, ul, p {
   margin-right: auto;
 }
 
-@media (max-width: 767px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_mobile.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_mobile.jpg);
-  }
-}
-
-@media (max-width: 1199px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_tablet.jpg);
-  }
-}
-
 @media (max-width: 767px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_mobile2x.jpg);
@@ -604,7 +590,7 @@ h1, h2, h3, h4, ul, p {
   }
 }
 
-@media (min-width: 768px), (max-width: 1199px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-width: 768px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_tablet2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_tablet2x.jpg);
@@ -613,8 +599,8 @@ h1, h2, h3, h4, ul, p {
 
 @media (min-width: 1200px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_mobile2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_mobile2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero2x.jpg);
   }
 }
 
@@ -1109,7 +1095,6 @@ h1, h2, h3, h4, ul, p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1125,6 +1110,9 @@ h1, h2, h3, h4, ul, p {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1219,12 +1207,11 @@ h1, h2, h3, h4, ul, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 60px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .invitation {
-    margin-left: auto;
+    margin-top: 60px;
   }
 }
 
@@ -1293,10 +1280,12 @@ h1, h2, h3, h4, ul, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 60px;
 }
 
 @media (min-width: 1200px) {
   .subscription {
+    margin-top: 0;
     margin-left: auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1687,6 +1676,13 @@ h1, h2, h3, h4, ul, p {
   margin-bottom: 40px;
 }
 
+@media (max-width: 767px) {
+  .filter {
+    margin-top: -15px;
+    margin-left: -8px;
+  }
+}
+
 @media (min-width: 768px) {
   .filter {
     -webkit-box-pack: center;
@@ -1703,12 +1699,8 @@ h1, h2, h3, h4, ul, p {
 }
 
 .filter__item {
-  margin-right: 8px;
-  margin-bottom: 15px;
-}
-
-.filter__item:last-child {
-  margin-right: 0;
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .filter__button {
@@ -1919,8 +1911,20 @@ h1, h2, h3, h4, ul, p {
   margin-bottom: 32px;
 }
 
-.mobile-contacts {
-  margin-top: 306px;
+.mobile-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.test {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .mobile-contacts__item {

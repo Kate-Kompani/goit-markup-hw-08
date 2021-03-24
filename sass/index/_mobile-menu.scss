@@ -56,8 +56,13 @@
     margin-bottom: 32px;
 }
 
-.mobile-contacts {
-    margin-top: 306px;
+.mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.test {
+    align-items:flex-end;
 }
 
 .mobile-contacts__item {
@@ -87,6 +92,7 @@
 .mobile__socials {
     display: flex;
     margin-top: 64px;
+    
 }
 
 .mobile__item {
