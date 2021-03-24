@@ -12,6 +12,41 @@
     margin-right: auto;    
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url(../images/main/hero2x.jpg);
+  }
+}
+
+@media (max-width:767px),
+(min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url(../images/main/hero_mobile2x.jpg);
+  }
+}
+
+@media (max-width:1199px),
+(min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url(../images/main/hero_tablet2x.jpg);
+  }
+}
+
 .hero__container{
     margin: 0px auto;
     text-align: center;

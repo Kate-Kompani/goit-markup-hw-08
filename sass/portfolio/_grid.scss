@@ -66,6 +66,8 @@
 }
 
 .grid__card {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     transition: box-shadow $duration $cubic-bezier;
     
