@@ -160,31 +160,35 @@
     }
 }
 
-.header-contacts__icon {
+.header-contacts__mail {
 
     @media (min-width:$tablet) {
         fill: currentColor;
         margin-right: 8px;
-
         width: 14px;
-        height: 10px;    
-
-        &:last-child {
-            width: 10px;
-            height: 14px;
-        }         
+        height: 10px;       
     }
 
     @media (min-width:$desktop) {
         margin-right: 10px;
-
         width: 16px;
-        height: 12px;
+        height: 12px;    
+    }
         
-        &:last-child {
-            width: 10px;
-            height: 16px;
-        }
+}
+
+.header-contacts__tel {
+
+    @media (min-width:$tablet) {
+        fill: currentColor;
+        margin-right: 8px;
+        width: 10px;
+        height: 14px;           
+    }
+
+    @media (min-width:$desktop) {
+        margin-right: 10px;
+        height: 16px;
     }
         
 }

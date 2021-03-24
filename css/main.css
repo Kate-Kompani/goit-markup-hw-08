@@ -527,26 +527,34 @@ h1, h2, h3, h4, ul, p {
 }
 
 @media (min-width: 768px) {
-  .header-contacts__icon {
+  .header-contacts__mail {
     fill: currentColor;
     margin-right: 8px;
     width: 14px;
     height: 10px;
   }
-  .header-contacts__icon:last-child {
+}
+
+@media (min-width: 1200px) {
+  .header-contacts__mail {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-contacts__tel {
+    fill: currentColor;
+    margin-right: 8px;
     width: 10px;
     height: 14px;
   }
 }
 
 @media (min-width: 1200px) {
-  .header-contacts__icon {
+  .header-contacts__tel {
     margin-right: 10px;
-    width: 16px;
-    height: 12px;
-  }
-  .header-contacts__icon:last-child {
-    width: 10px;
     height: 16px;
   }
 }
