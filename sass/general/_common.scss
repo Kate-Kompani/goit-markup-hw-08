@@ -31,11 +31,11 @@ h1, h2, h3, h4, ul, p {
     }
     
     @media (min-width:$tablet){
-        max-width: 768px;
+        width: 768px;
     }
 
     @media (min-width:$desktop){
-        max-width: 1200px;
+        width: 1200px;
     }
 }
 
