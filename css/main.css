@@ -572,8 +572,6 @@ h1, h2, h3, h4, ul, p {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero.jpg);
   background-color: #C4C4C4;
   background-repeat: no-repeat;
   background-position: center;
@@ -583,21 +581,42 @@ h1, h2, h3, h4, ul, p {
   margin-right: auto;
 }
 
-@media (max-width: 767px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_mobile.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_tablet.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero.jpg);
+  }
+}
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_mobile2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_mobile2x.jpg);
   }
 }
 
-@media (min-width: 768px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero_tablet2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_tablet2x.jpg);
   }
 }
 
-@media (min-width: 1200px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero2x.jpg);
@@ -1489,25 +1508,33 @@ h1, h2, h3, h4, ul, p {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 10px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.signup-form__label:hover .data-input__place,
-.signup-form__label:focus .data-input__place,
-.signup-form__label:focus-within .data-input__place {
+.signup-form__container:hover .data-input__place,
+.signup-form__container:focus .data-input__place,
+.signup-form__container:focus-within .data-input__place {
   border: 1px solid #2196F3;
   outline: none;
 }
 
-.signup-form__label:hover .data-input__icon,
-.signup-form__label:focus .data-input__icon,
-.signup-form__label:focus-within .data-input__icon {
+.signup-form__container:hover .data-input__icon,
+.signup-form__container:focus .data-input__icon,
+.signup-form__container:focus-within .data-input__icon {
   fill: #2196F3;
+}
+
+.signup-form__container:hover .signup-form__label,
+.signup-form__container:focus .signup-form__label,
+.signup-form__container:focus-within .signup-form__label {
+  color: #2196F3;
 }
 
 .data-input {
   position: relative;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .data-input__place {
@@ -1544,6 +1571,7 @@ h1, h2, h3, h4, ul, p {
   overflow: auto;
   resize: none;
   padding: 12px 16px;
+  margin-bottom: 20px;
   margin-top: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1856,7 +1884,6 @@ h1, h2, h3, h4, ul, p {
   height: 100vh;
   background-color: #ffffff;
   padding: 48px 40px;
-  overflow-y: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1919,12 +1946,9 @@ h1, h2, h3, h4, ul, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.test {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile-contacts__item {
