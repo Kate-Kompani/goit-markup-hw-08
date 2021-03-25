@@ -27,15 +27,15 @@ h1, h2, h3, h4, ul, p {
     padding: 0px 15px;
 
      @media (min-width:$mobile){
-        width: 480px;
+        max-width: 480px;
     }
     
     @media (min-width:$tablet){
-        width: 768px;
+        max-width: 768px;
     }
 
     @media (min-width:$desktop){
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 

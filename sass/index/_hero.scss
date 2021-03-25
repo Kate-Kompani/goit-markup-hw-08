@@ -7,11 +7,19 @@
     margin-left: auto;
     margin-right: auto;  
 
-    @media (max-width:767px) {
+    height: 400px;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/main/hero_mobile.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-     url(../images/main/hero_mobile.jpg);
+     url(../images/main/hero_mobile2x.jpg);
     }
 
     @media (min-width:$tablet) {
@@ -21,43 +29,28 @@
      url(../images/main/hero_tablet.jpg);
     }
 
+    @media (min-width:$tablet) and 
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url(../images/main/hero_tablet2x.jpg);
+    }
+
     @media (min-width:$desktop) {
+      height: 600px;
       background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
      url(../images/main/hero.jpg);  
     }
-}
 
-@media (max-width:767px) and
-(min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to right,
-     rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)),
-     url(../images/main/hero_mobile2x.jpg);
-  }
-}
-
-@media (min-width:$tablet) and
-(min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to right,
-     rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)),
-     url(../images/main/hero_tablet2x.jpg);
-  }
-}
-
-@media (min-width:$desktop) and
-(min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
+    @media (min-width:$desktop) and 
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
